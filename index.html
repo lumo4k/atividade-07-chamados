@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Chamados</title>
+
+    <script defer src="chamados.js"></script>
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Sistema de Chamados</h1>
+
+    <div class="filtros">
+
+        <input type="text" id="pesquisa" placeholder="Pesquisar por usuário ou chamado...">
+
+        <select id="filtro-prioridade">
+            <option value="">Todas as prioridades</option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+            <option value="Crítica">Crítica</option>
+        </select>
+
+        <select id="filtro-status">
+            <option value="">Todos os status</option>
+            <option value="Aberto">Aberto</option>
+            <option value="Em progresso">Em progresso</option>
+            <option value="Fechado">Fechado</option>
+        </select>
+
+    </div>
+
+    <div id="lista-chamados"></div>
+
+</body>
+
+</html>
